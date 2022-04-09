@@ -1,4 +1,4 @@
 *.iml
 .idea/
 макет.cdr
-/target/
+/target
