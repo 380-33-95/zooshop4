@@ -1,1 +1,1 @@
-web:    java $JAVA_OPTS -jar target/zooshop4.jar --port $PORT target/*.war
+java -Dserver.port=$PORT -jar target/zooshop4.jar --port $PORT target/*.war
