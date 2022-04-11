@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT $JAVA_OPTS -jar target/*.jar
+java $JAVA_OPTS -jar target/dependency/jetty-runner.jar --port $PORT target/*.wa
