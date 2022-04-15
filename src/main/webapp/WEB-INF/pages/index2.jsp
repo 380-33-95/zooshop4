@@ -42,6 +42,23 @@
     </div>
 
 
+    <div class="container-fluid" style="padding: 0; height: 345px">
+
+        <header style="padding:0;">
+
+            <div class="header row mx-auto" style="
+            height: 345px;
+            padding:0;"
+
+        <jsp:include page="carousel.jsp" />
+
+    </div>
+
+    </header>
+
+    </div>
+
+
     <div class="container-fluid" style="padding: 0;" >
         <main style="padding:0;">
 
