@@ -64,15 +64,19 @@
                 <div class="collapse navbar-collapse" id="navbarText" style="padding: 0;">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0" style="text-align: center; float: none">
                         <li class="nav-item" style="float: none; display: inline-block; padding-left:50px;">
-                            <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                            <a class="nav-link active" aria-current="page" href="#">Главная страница</a>
                         </li>
 
                         <li class="nav-item" style="float: none; display: inline-block; padding-left:50px;">
-                            <a class="nav-link" href="#">Корм</a>
+                            <a class="nav-link" href="#">Корма для кошек</a>
                         </li>
 
                         <li class="nav-item" style="float: none; display: inline-block; padding-left:50px;">
-                            <a class="nav-link" href="#">Гигиена</a>
+                            <a class="nav-link" href="#">Наполнитель для туалета</a>
+                        </li>
+
+                        <li class="nav-item" style="float: none; display: inline-block; padding-left:50px;">
+                            <a class="nav-link" href="#">Предметы для ухода за кошками</a>
                         </li>
                     </ul>
                     <span class="navbar-text">
