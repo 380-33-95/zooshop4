@@ -16,6 +16,7 @@
 
 </head>
 <body>
+
 <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
     <!-- Индикаторы -->
     <div class="carousel-indicators">
@@ -23,48 +24,49 @@
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
+
     <div class="carousel-inner">
 
         <div class="carousel-item active">
-            <img src="<%=request.getContextPath() %>/resources/image/3a0b4f134b597e1874aa24fb1a638b10.jpg"
+            <img src="<%=request.getContextPath() %>/resources/image/courusel1.png"
                  class="d-block w-100"
                  alt="1"
                  style="
      padding: 0 0 0 0;
-    width: 195px;
-    height:404px;
+     width: fit-content;
+    height:200px;
     object-fit: cover;"
             >
 
         </div>
 
         <div class="carousel-item">
-            <img src="<%=request.getContextPath() %>/resources/image/175c09cd3dcbc35020e9a62a36f7e36e.jpg"
+            <img src="<%=request.getContextPath() %>/resources/image/courusel2.png"
                  class="d-block w-100"
                  alt="2"
                  style="
      padding: 0 0 0 0;
-   width: 195px;
-    height:404px;
+       width: fit-content;
+    height:200px;
     object-fit: cover;"
             >
 
         </div>
 
         <div class="carousel-item">
-            <img src="<%=request.getContextPath() %>/resources/image/bf77b5a5544db31f69d80da8895c06fa.jpg"
+            <img src="<%=request.getContextPath() %>/resources/image/courusel3.png"
                  class="d-block w-100"
                  alt="3"
                  style="
      padding: 0 0 0 0;
-    width: 195px;
-    height:404px;
+       width: fit-content;
+    height:200px;
     object-fit: cover;"
             >
 
-            >
         </div>
     </div>
+
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Предыдущий</span>
@@ -73,6 +75,7 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Следующий</span>
     </button>
+
 </div>
 </body>
 </html>

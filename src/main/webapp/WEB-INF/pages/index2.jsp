@@ -47,14 +47,14 @@
     </div>
 
 
-    <div class="container-fluid" style="padding: 0; width: 405px;
-    height:404px;">
+    <div class="container-fluid" style="padding: 0; width: 100%;
+    height:205px;">
 
         <header style="padding:0;">
 
             <div class="header row mx-auto" style="
-            width: 405px;
-    height:404px;
+            width: fit-content;
+    height:200px;
             padding:0;"
 
         <jsp:include page="carousel.jsp" />
