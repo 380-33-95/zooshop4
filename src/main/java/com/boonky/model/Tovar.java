@@ -2,6 +2,10 @@ package com.boonky.model;
 
 public class Tovar {
 
+    public Tovar() {
+
+    }
+
     public String getName() {
         return name;
     }
