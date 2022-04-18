@@ -54,6 +54,16 @@ public class TovarDAO {
         return allgoods;
     }
 
+
+    public static Tovar getTovarfromDB(int id) throws SQLException {
+
+        Statement statement = connectionToDataBase.createStatement();
+        String getIdTovar="select * from tovardb where id = "+id;
+        ResultSet resultatviborki = statement.executeQuery(getIdTovar);
+
+        return Tovar;
+    }
+
     public Tovar show(int id) {
 //        return people.stream().filter(person -> person.getId() == id).findAny().orElse(null);
         return null;

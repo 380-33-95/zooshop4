@@ -9,8 +9,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class MyController {
 
     @RequestMapping("/")
-    public String staticResource(Model model) {
+    public String IndexPage(Model model) {
         return "index2";
+    }
+
+    @RequestMapping("/korm")
+    public String KormPage(Model model) {
+        return "korm";
     }
 
 }
