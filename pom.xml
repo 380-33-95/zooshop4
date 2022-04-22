@@ -19,21 +19,13 @@
     <maven.compiler.target>1.8</maven.compiler.target>
 
     <spring.version>5.3.16</spring.version>
-
-    <slf4j.version>1.7.21</slf4j.version>
-    <java.version>11</java.version>
-
-    <aspectj.version>1.7.3</aspectj.version>
-    <jackson.version>1.6.4</jackson.version>
-    <commons.version>1.4</commons.version>
-
   </properties>
 
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.12</version>
+      <version>4.11</version>
       <scope>test</scope>
     </dependency>
 
@@ -79,16 +71,7 @@
       <groupId>org.hibernate.validator</groupId>
       <artifactId>hibernate-validator</artifactId>
       <version>6.1.6.Final</version>
-      <scope>compile</scope>
     </dependency>
-
-    <!-- https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.1-api -->
-    <dependency>
-      <groupId>org.hibernate.javax.persistence</groupId>
-      <artifactId>hibernate-jpa-2.1-api</artifactId>
-      <version>1.0.2.Final</version>
-    </dependency>
-
 
     <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
     <dependency>
@@ -96,8 +79,6 @@
       <artifactId>postgresql</artifactId>
       <version>42.3.3</version>
     </dependency>
-
-
 
     <!-- https://mvnrepository.com/artifact/org.webjars/bootstrap -->
     <dependency>
@@ -131,73 +112,47 @@
       <version>2.2</version>
     </dependency>
 
-
-    <dependency>
-      <groupId>com.github.tennaito</groupId>
-      <artifactId>rsql-jpa</artifactId>
-      <version>2.0.1</version>
-    </dependency>
-
-    <dependency>
-      <groupId>taglibs</groupId>
-      <artifactId>standard</artifactId>
-      <version>1.1.2</version>
-      <type>jar</type>
-      <scope>compile</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>net.spy</groupId>
-      <artifactId>spymemcached</artifactId>
-      <version>2.12.1</version>
-    </dependency>
-
-
   </dependencies>
 
   <build>
     <finalName>zooshop4</finalName>
-
-    <plugins>
-
-
-
-<!--        <plugin>-->
-<!--          <artifactId>maven-clean-plugin</artifactId>-->
-<!--          <version>3.1.0</version>-->
-<!--        </plugin>-->
-<!--        &lt;!&ndash; see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_war_packaging &ndash;&gt;-->
-<!--        <plugin>-->
-<!--          <artifactId>maven-resources-plugin</artifactId>-->
-<!--          <version>3.0.2</version>-->
-<!--        </plugin>-->
-<!--        <plugin>-->
-<!--          <artifactId>maven-compiler-plugin</artifactId>-->
-<!--          <version>3.8.0</version>-->
-<!--        </plugin>-->
-<!--        <plugin>-->
-<!--          <artifactId>maven-surefire-plugin</artifactId>-->
-<!--          <version>2.22.1</version>-->
-<!--        </plugin>-->
-<!--        <plugin>-->
-<!--          <artifactId>maven-war-plugin</artifactId>-->
-<!--          <version>3.2.2</version>-->
-<!--        </plugin>-->
-<!--        <plugin>-->
-<!--          <artifactId>maven-install-plugin</artifactId>-->
-<!--          <version>2.5.2</version>-->
-<!--        </plugin>-->
-<!--        <plugin>-->
-<!--          <artifactId>maven-deploy-plugin</artifactId>-->
-<!--          <version>2.8.2</version>-->
-<!--        </plugin>-->
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+        <plugin>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>3.1.0</version>
+        </plugin>
+        <!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_war_packaging -->
+        <plugin>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>3.0.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.8.0</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>2.22.1</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-war-plugin</artifactId>
+          <version>3.2.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-install-plugin</artifactId>
+          <version>2.5.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>2.8.2</version>
+        </plugin>
 
 
 
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-dependency-plugin</artifactId>
-          <version>3.3.0</version>
           <executions>
             <execution>
               <phase>package</phase>
@@ -205,21 +160,21 @@
               <configuration>
                 <artifactItems>
                   <artifactItem>
-                    <groupId>com.github.jsimone</groupId>
+                    <groupId>com.heroku</groupId>
                     <artifactId>webapp-runner</artifactId>
-                    <version>9.0.11.0</version>
+                    <version>9.0.52.1</version>
                     <destFileName>webapp-runner.jar</destFileName>
                   </artifactItem>
                 </artifactItems>
               </configuration>
             </execution>
           </executions>
-        </plugin>
+        </plugin>j
 
       </plugins>
 
 
 
-
+    </pluginManagement>
   </build>
 </project>
