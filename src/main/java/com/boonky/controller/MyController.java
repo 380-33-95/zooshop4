@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/pages")
 public class MyController {
 
-    @RequestMapping("/")
-    public String IndexPage(Model model) {
-        return "index2";
-    }
-
-    @RequestMapping("/korm")
-    public String KormPage(Model model) {
-        return "korm";
-    }
+//    @RequestMapping("/")
+//    public String IndexPage(Model model) {
+//        return "index2";
+//    }
+//
+//    @RequestMapping("/korm")
+//    public String KormPage(Model model) {
+//        return "korm";
+//    }
 
 }
