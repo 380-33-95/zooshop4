@@ -21,4 +21,10 @@
   <servlet-name>dispatcher</servlet-name>
   <url-pattern>/</url-pattern>
 </servlet-mapping>
+
+  <!-- The main page for the site will be the MyCMS servlet (http://website/CMS) -->
+  <welcome-file-list>
+      <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
 </web-app>
