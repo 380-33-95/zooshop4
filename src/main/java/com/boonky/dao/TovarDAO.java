@@ -8,10 +8,9 @@ import java.util.List;
 
 public class TovarDAO {
 
-    private static final String URL = "jdbc:postgresql://ec2-99-80-170-190.eu-west-1.compute.amazonaws.com:5432/d7saeqm215mbq8";
-    private static final String USERNAME = "cdrmrlyixdjutl";
-    private static final String PASSWORD = "4860b4c859e8521090eb52032bea7062206f4b2783dee6c7eefaa8608fd9127b";
-
+    private static final String URL = "jdbc:postgresql://localhost:5432/zooshop_db";
+    private static final String USERNAME = "postgres";
+    private static final String PASSWORD = "globus";
     private static Connection connectionToDataBase;
 
     static {
